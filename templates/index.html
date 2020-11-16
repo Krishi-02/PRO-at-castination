@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    
+    <!-- Link for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="index.html" class="top-el">Home</a></li>
+        <li><a href="index.html" class="top-el">Profile</a></li>
+        <li><a href="index.html" class="top-el">About</a></li>
+        <li><a href="index.html" class="top-el">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="top-container">
+      <img class="logo" src="static/images/wind.png" alt="wind-img">
+      <h1 class="title">PRO[at]crastination</h1>
+      <p class="subtitle">It's time to work.</p>
+    </div>
+
+    <hr>
+
+    <div class="middle-container">
+      <img class="user-img" src="static/images/relax.png" alt="user-img">
+      <h1 class="username">Username</h1>
+      <h2 class ="level">Level 1: Procrastinator</h2>
+      <div id="adduserdata">
+      <textarea id="txtarea"></textarea>
+       <a class="BUTTON_VGJ" href="" onclick="showtext()">Add a Task</a>
+    </div>
+    </div>
+
+        <div class="lower-container">
+      <h1 class="S">Achievements</h1>
+      <h2 class="task1 demo">Task 1:</h2>
+      <h3 class="description1">description</h3>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+  </body>
+
+      <p>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+</html>
